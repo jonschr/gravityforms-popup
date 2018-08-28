@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+/* ==========================================================================
+   Queries
+   ========================================================================== */
+/* ==========================================================================
+   Includes
+   ========================================================================== */
+.popup-wrapper {
+  background: rgba(237, 187, 95, 0.9);
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99999;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  opacity: 0; }
+  .popup-wrapper .popup-wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 30px; }
+    @media (max-width: 767px) {
+      .popup-wrapper .popup-wrap {
+        padding: 0; } }
+    .popup-wrapper .popup-wrap .popup-content {
+      position: fixed;
+      background: #333333;
+      padding: 30px 40px;
+      top: 50%;
+      left: 50%;
+      max-width: calc( 100% - 60px);
+      max-height: calc( 100% - 60px);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      -webkit-transition: .5s all;
+      transition: .5s all; }
+      @media (max-width: 767px) {
+        .popup-wrapper .popup-wrap .popup-content {
+          padding: 40px 30px 30px;
+          max-width: 100%;
+          max-height: 100%;
+          height: 100%;
+          width: 100%;
+          overflow: auto; } }
+  .popup-wrapper .gform_wrapper {
+    padding: 0;
+    margin: 0; }
+    .popup-wrapper .gform_wrapper .gform_description,
+    .popup-wrapper .gform_wrapper .gform_confirmation_message {
+      color: white; }
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px; }
+  .close-popup span {
+    height: 5px;
+    width: 100%;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%; }
+    .close-popup span:nth-of-type(1) {
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .close-popup span:nth-of-type(2) {
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+
+.popup-wrapper.open {
+  opacity: 1;
+  pointer-events: auto; }
+  .popup-wrapper.open .popup-content {
+    margin-top: 0;
+    opacity: 1;
+    -webkit-transition: .5s all;
+    transition: .5s all; }
+
+.popup-wrapper.closed {
+  display: none;
+  opacity: 0;
+  pointer-events: none; }
+  .popup-wrapper.closed .popup-content {
+    margin-top: 999px;
+    opacity: 0;
+    -webkit-transition: .5s all;
+    transition: .5s all; }
+/*# sourceMappingURL=gravityforms-popup.css.map */

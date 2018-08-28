@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+$black: #333333;
+$yellow: #EDBB5F;
+$default: gray;
+
+/* ==========================================================================
+   Queries
+   ========================================================================== */
+
+$mobile-width-section: 767px;
+$tablet-width-section: 768px;
+$desktop-width-section: 1200px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width-section}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width-section}) and (max-width: #{$desktop-width-section - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width-section}) {
+        @content;
+    }
+}
+
+@mixin notmobile {
+    @media (min-width: #{$tablet-width-section}) {
+        @content;
+    }
+}
+
+@mixin notdesktop {
+    @media (max-width: #{$desktop-width-section}) {
+        @content;
+    }
+}
+
+/* ==========================================================================
+   Includes
+   ========================================================================== */
+
+//* Main
+@import "general";
