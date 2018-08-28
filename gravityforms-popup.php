@@ -64,7 +64,7 @@ function gf_popup_footer() {
 	wp_enqueue_script( 'gf-popup-main' );
 	wp_enqueue_style( 'gf-popup-style' );
 
-	echo '<div class="popup-wrapper">';
+	echo '<div style="display: none;" class="popup-wrapper">';
 		echo '<div class="popup-wrap">';
 			echo '<div class="popup-content">';
 				echo '<a class="close-popup" href="#"><span></span><span></span></a>';

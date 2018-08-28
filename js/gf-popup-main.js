@@ -15,6 +15,8 @@ jQuery(document).ready(function( $ ) {
 	function gfPopupInitialLoad() {
 		wrapper.removeClass( 'open' );
 		wrapper.addClass( 'closed' );
+
+		wrapper.css( "display", "initial" );
 	}
 
 	function gfPopupOpen() {
@@ -35,7 +37,7 @@ jQuery(document).ready(function( $ ) {
 
 			if (e.target !== this)
 			    return;
-			
+
 			gfPopupClose();
 		});
 	}
