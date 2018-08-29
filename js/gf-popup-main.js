@@ -5,6 +5,7 @@ jQuery(document).ready(function( $ ) {
 	var wrapper = $( '.popup-wrapper' );
 	var popupcontent = $( '.popup-content' );
 	var closelink = $( '.close-popup' );
+	var scrollingEnabled = true;
 	
 	function gfPopupInit() {
 		gfPopupInitialLoad();
@@ -49,14 +50,17 @@ jQuery(document).ready(function( $ ) {
 	}
 
 	function gfPopupDisableScroll() {
+		scrollingEnabled = false;
 		var current = $(window).scrollTop();
 		$(window).scroll(function() {
-		    $(window).scrollTop(current);
+			if ( scrollingEnabled !== true ) {
+			    $(window).scrollTop(current);
+			}
 		});
 	}
 
 	function gfPopupEnableScroll() {
-		$(window).off('scroll');
+		scrollingEnabled = true;
 	}
 	
 	//* DO ALL OF THE THINGS!
