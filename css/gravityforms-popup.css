@@ -49,9 +49,10 @@
   .popup-wrapper .gform_wrapper {
     padding: 0;
     margin: 0; }
-    .popup-wrapper .gform_wrapper .gform_description,
-    .popup-wrapper .gform_wrapper .gform_confirmation_message {
-      color: white; }
+    .popup-wrapper .gform_wrapper span.gform_description {
+      color: white !important; }
+  .popup-wrapper div.gform_confirmation_message {
+    color: white !important; }
 
 .close-popup {
   position: absolute;

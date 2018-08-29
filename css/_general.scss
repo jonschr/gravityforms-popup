@@ -46,10 +46,13 @@
         padding: 0;
         margin: 0;
 
-        .gform_description,
-        .gform_confirmation_message {
-            color: white;
+        span.gform_description {
+            color: white !important;
         }
+    }
+
+    div.gform_confirmation_message {
+        color: white !important;
     }
 }
 
