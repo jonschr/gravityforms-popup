@@ -36,8 +36,9 @@ jQuery(document).ready(function( $ ) {
 
 		wrapper.not( popupcontent ).click( function( e ) {
 
-			if (e.target !== this)
+			if (e.target !== this) {
 			    return;
+			}
 
 			gfPopupClose();
 		});
