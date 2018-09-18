@@ -2,8 +2,8 @@
 /*
     Plugin Name: Gravity Forms Popups
     Plugin URI: https://elod.in
-    Description: A plugin to allow for Gravity Forms popups on the White Jacobs site
-    Version: 0.1
+    Description: A plugin to allow for a single, simple popup showing a Gravity Form
+    Version: 0.2
     Author: Jon Schroeder
     Author URI: https://elod.in
 
