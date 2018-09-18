@@ -46,8 +46,8 @@ function gf_popup_register_sidebar() {
 	register_sidebar(
 		array(
 			'id' => 'gfpopups',
-			'name' => __( 'Lightbox Popup' ),
-			'description' => __( 'To display this sidebar, add a link with a class of open-popup' ),
+			'name' => __( 'Gravity Forms Lightbox Popup' ),
+			'description' => __( 'To display this widget area, add a link with a class of open-popup' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
