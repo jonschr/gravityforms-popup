@@ -2,8 +2,9 @@
 /*
     Plugin Name: Gravity Forms Popups
     Plugin URI: https://elod.in
+    GitHub Plugin URI: https://github.com/jonschr/gravityforms-popup
     Description: A plugin to allow for a single, simple popup showing a Gravity Form
-    Version: 0.2
+    Version: 0.2.1
     Author: Jon Schroeder
     Author URI: https://elod.in
 
